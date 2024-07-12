@@ -3,7 +3,7 @@ data "azurerm_resource_group" "terraformstorage" {
 }
 
 resource "azurerm_storage_account" "terraformaccount1" {
-  name                     = "devopssecurity1"
+  name                     = "devops1"
   resource_group_name      = data.azurerm_resource_group.terraformstorage.name
   location                 = "Central US"
   account_tier             = "Standard"
