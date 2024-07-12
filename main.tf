@@ -9,7 +9,7 @@ resource "azurerm_storage_account" "terraformaccount1" {
   account_tier             = "Standard"
   account_replication_type = "GRS"
 
-  enable_https_traffic_only = false
+  enable_https_traffic_only = true
   public_network_access_enabled = false
 
 }
